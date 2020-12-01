@@ -1,0 +1,50 @@
+Projects Details: The main objective create a ride-sharing application that incorporates React or Ajax as a frontend with a Django backend. The main focus will be to demo real-time communication between client and server. For that my proposal would be to use Django Channels and Redis to send and receive JSON messages over an open WebSockets connection
+
+Breakups:-
+
+Backend Part-(Mithun)
+==========
+- Create a RESTful API with Django REST Framework. In my solo project, I showed how we can leverage Django REST Framework. I will extend the same concept here.
+- Implement our usual form-based authentication model. If time permits we can use more advance JSON Web Tokens (JWT)
+- Create a data model to track the trips that the riders and drivers participate in along with the APIs
+- Use Django Channels to create and update data on the server.
+- Send messages to the UI from the server via WebSockets.
+
+FrontEnd Part:-(Imran +  Ricardo)
+===========
+React
+--------
+- Create a React app from scratch using Create React App. If opting for React my suggestion would be to use React+JSX. You guys can then explore how to write components to facilitate the authentication APIs first that allows users to sign up, log in, and log out.
+
+-  Next objective would be to build two UI in fact two dashboards -- one for the user and one for the driver.
+
+- Last part would be to explore and implement some React + JSX code to establishing a WebSockets connection with the server and subscribing to it. (last integration part of the project)
+
+- Add React Bootstrap and you can leverage React Hook to develop UI React components.
+
+Additional Features
+
+- Add a GoogleApi to add map support.
+- Add cypress to run automated testing on UI first then on the whole application at the end after we integrate both front and back end.
+
+Another alternative would be to use AJAX if you guys seem more comfortable. AJAX also has an interface to WebSocket. The reference link is given below.
+
+
+References:- 
+=========
+https://www.fullstackpython.com/websockets.html - Websocket Fundametals
+https://dev.to/lewiskori/user-registration-and-authorization-on-a-django-api-with-djoser-and-json-web-tokens-4kc7 - JWT Good explanation
+https://www.html5rocks.com/en/tutorials/websockets/basics/ - Nice writeup on web socket
+https://www.youtube.com/watch?v=2Nt-ZrNP22A&t=1285s&ab_channel=HusseinNasser - Basic Web socket example
+https://www.tutorialspoint.com/html5/html5_websocket.htm 
+https://www.django-rest-framework.org/ - Django Rest Framework
+https://www.youtube.com/watch?v=soGRyl9ztjI&ab_channel=JavaBrains - JWT why to use and what it compares to session cookie 
+https://jwt.io/introduction/ - JWT io 
+https://www.youtube.com/watch?v=RVH05S1qab8&ab_channel=CodingEntrepreneurs - Django channel tutorial
+https://www.youtube.com/watch?v=wDESPxBOtvY&ab_channel=ArunRavindranArunRocks - Await ^& Async
+https://www.youtube.com/watch?v=RNLJsjzRa4Y&ab_channel=AndreaRoss - Using PostgreSQL with Redis 
+https://www.youtube.com/watch?v=G_EM5WM_08Q&ab_channel=ArunRavindranArunRocks - Django channel tutorial
+https://channels.readthedocs.io/en/stable/ - Django Channel
+https://asgi.readthedocs.io/en/latest/introduction.html -  ASGI 
+https://reactjs.org/docs/introducing-jsx.html - React + JSX
+https://makoserver.net/articles/AJAX-over-WebSockets - Ajax Websocket
