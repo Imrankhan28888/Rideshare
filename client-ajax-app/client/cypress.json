@@ -1,0 +1,13 @@
+{
+    "baseUrl": "http://localhost:3000",
+    "env": {
+        "credentials-rider": {
+            "username": "rider@rideShare.com",
+            "password": "1234"
+        },
+        "credentials-driver": {
+            "username": "driver@rideShare.com",
+            "password": "1234"
+        }
+    }
+}

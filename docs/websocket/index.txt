@@ -1,0 +1,47 @@
+// Instructions:
+// 1. Create a new folder
+// 2. copy index.js and client.html in the new folder
+// 3. Node.js needs to be installed on local machine if you want to run index.js (Server)
+// 4. On command prompt, cd to new folder location and type "npm init -y" . This will create a json file 
+// 5. Now type "npm install websocket" 
+// 6. Run the index.js file in vscode and client.html in browser
+
+
+const http = require("http");
+const { client } = require("websocket")
+const WebSocketServer = require("websocket").server
+let connection = null;
+
+const httpserver = http.createServer((req, res) => {
+
+console.log ("We have received a request")
+});
+
+const websocket = new WebSocketServer({
+    "httpServer": httpserver
+})
+
+
+websocket.on("request", request => {
+
+    connection = request.accept(null, request.origin)
+    connection.on("open", () => console.log("Opened!!!"))
+    connection.on("close", () => console.log("CLOSED!!!"))
+    connection.on("message", message => {
+
+        console.log(`Received message ${message.utf8Data}`)
+    })
+
+    // sendevery5seconds();
+    connection.send("Hello Client, I am SERVER")
+
+})
+
+httpserver.listen(8080, () => console.log("My server is listening on port 8080"));
+
+// function sendevery5seconds() {
+
+//     connection.send(`Message ${Math.random()}`);
+
+//     setTimeout(sendevery5seconds, 5000);
+// }

@@ -1,0 +1,11 @@
+Project Title: Ride-Share App					
+Project Lead: Name Mithun Banerjee (m.banerjeein@gmail.com) (Python)					
+Description: We will be creating a  ride-sharing application that incorporates a React or some basic frontend with a Django backend. The focus will be to create a real-time communication between client and server. We'll be using Django Channels and Redis to send and receive JSON messages over an open WebSockets connection.					
+					
+					
+					
+					
+Partner 1: Mithun Banerjee (m.banerjeein@gmail.com) (Python)	(BackEnd + API Integration)
+				
+Partner 2: Imran Khan (imran_khan2888@hotmail.com) (Python)	(FrontEnd)				
+Partner 3: Ricardo Leon (ricardoleon_1@yahoo.com) (Python)	(FrontEnd)				
