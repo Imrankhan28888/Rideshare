@@ -47,4 +47,4 @@ https://www.youtube.com/watch?v=G_EM5WM_08Q&ab_channel=ArunRavindranArunRocks - 
 https://channels.readthedocs.io/en/stable/ - Django Channel
 https://asgi.readthedocs.io/en/latest/introduction.html -  ASGI 
 https://reactjs.org/docs/introducing-jsx.html - React + JSX
-https://makoserver.net/articles/AJAX-over-WebSockets - Ajax Websocket
+https://makoserver.net/articles/AJAX-over-WebSockets - Ajax Websocket.
